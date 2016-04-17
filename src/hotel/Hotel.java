@@ -53,13 +53,14 @@ public class Hotel {
     public static void main(String [] args) {
         GeneratorDanych generatorDanych = new GeneratorDanych();
 
-        Klient[] tablicaKlientow = generatorDanych.generujTabliceKlientow(13);
-        Ankieta[] tablicaAnkiet = generatorDanych.generujTabliceAnkiet(13);
-        Zamowienie[] tablicaZamowien = new Zamowienie[10];
-        Pokoj[] tablicaPokoi = generatorDanych.generujTablicePokoi(1);
-        Recepcjonista[] tablicaRecepcjonistow = generatorDanych.generujTabliceRecepcjonistow(11);
+        Klient[] tablicaKlientow = generatorDanych.generujTabliceKlientow(47);
+        Ankieta[] tablicaAnkiet = generatorDanych.generujTabliceAnkiet(47);
+        Zamowienie[] tablicaZamowien = new Zamowienie[47];
+        Pokoj[] tablicaPokoi = generatorDanych.generujTablicePokoi(17);
+        Recepcjonista[] tablicaRecepcjonistow = generatorDanych
+                .generujTabliceRecepcjonistow(35);
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 47; i++) {
             tablicaZamowien[i] = przyjmijZamowienie(tablicaKlientow[i], tablicaAnkiet[i]);
         }
 
